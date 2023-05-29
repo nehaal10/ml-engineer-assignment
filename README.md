@@ -3,7 +3,7 @@ the goal of this assignment is to convert the hf pipeline input to v2Format.
 
 # Test out the URL deployed in TrueFoundry 
 ## URL : https://ml-assignment-workspace-8000.demo1.truefoundry.com/predict
-### custom input
+### custom input example
 ```json
 {
   "hf_pipeline": "zero-shot-classification",
@@ -12,7 +12,7 @@ the goal of this assignment is to convert the hf pipeline input to v2Format.
   "parameters": {"candidate_labels": ["refund", "legal", "faq"]}
 }
 ```
-### output
+### output example
 ```json
 "{\"sequence\": \"Hi, I recently bought a device from your company but it is not working as advertised and I would like to get reimbursed!\", \"labels\": [\"refund\", \"faq\", \"legal\"], \"scores\": [0.937849760055542, 0.04914167523384094, 0.013008514419198036]}"
 ```
@@ -20,5 +20,21 @@ the goal of this assignment is to convert the hf pipeline input to v2Format.
 ## Local Setup steps
 #### clone the ropository
 ```git
-git clone 
+git clone https://github.com/nehaal10/ml-engineer-assignment.git
 ```
+#### create virtual environment
+```git
+python -m venv .<give your virtual environment name>
+```
+#### then run main.py file to get access to localhost
+```power shell
+python main.py
+```
+#### copy paste the localhost url in the browser to try out the api
+#### to deploy the the loacal host in TrueFoundry
+```power shell
+python deploy.py --workspace_fqn <place your TrueFoundry workspace function here>
+```
+
+### to test out already deployed url, just paste the api url in the browser to try it out
+#### API URL is give above
