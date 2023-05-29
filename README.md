@@ -2,7 +2,7 @@
 the goal of this assignment is to convert the hf pipeline input to v2Format.
 
 # Test out the URL deployed in TrueFoundry 
-### URL : https://ml-assignment-workspace-8000.demo1.truefoundry.com/predict
+#### URL : https://ml-assignment-workspace-8000.demo1.truefoundry.com/predict
 ### custom input example
 ```json
 {
