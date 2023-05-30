@@ -36,5 +36,10 @@ python main.py
 python deploy.py --workspace_fqn <place your TrueFoundry workspace function here>
 ```
 
-### to test out already deployed url, just paste the api url in the browser to try it out
-#### API URL is give above
+### to test out already deployed url
+#### clone this repo as mentioned above in your virtual environment 
+#### then open the file named getOutput.py and change the hf pipeline and inputs
+#### then run this command
+```git
+python getOutput.py
+```
